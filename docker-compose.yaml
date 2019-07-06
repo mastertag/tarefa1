@@ -3,9 +3,11 @@ version: '2.3'
 services:
 
   php:
-    build: .docker/php
+    #build: .docker/php
+    image: mastertag/tarefa1:v1
     container_name: php
     restart: always
+    #tty: true
     volumes:
       - ./app/:/var/www/
     networks:
@@ -14,12 +16,11 @@ services:
       mysql:
         condition: service_healthy
 
-
   web:
     build: .docker/nginx
     container_name: server
     restart: always
-    tty: true
+    #tty: true
     ports:
       - "8000:80"
     volumes:
