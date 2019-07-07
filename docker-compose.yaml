@@ -4,7 +4,7 @@ services:
 
   php:
     build: .docker/php
-    #image: mastertag/tarefa1:v1
+    #image: mastertag/tarefa1:v2
     container_name: php
     restart: always
     #tty: true
