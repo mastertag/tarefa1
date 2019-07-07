@@ -3,8 +3,8 @@ version: '2.3'
 services:
 
   php:
-    #build: .docker/php
-    image: mastertag/tarefa1:v1
+    build: .docker/php
+    #image: mastertag/tarefa1:v1
     container_name: php
     restart: always
     #tty: true

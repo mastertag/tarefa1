@@ -9,3 +9,5 @@ npm-debug.log
 yarn-error.log
 .docker/mysql
 .idea
+.env
+/vendor
