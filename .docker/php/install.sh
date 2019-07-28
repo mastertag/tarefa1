@@ -6,6 +6,9 @@ composer install
 echo "****************** Copia do .env ********************"
 cp .env.example .env
 
+echo "****************** CHMOD storage ********************"
+chmod -R 755 storage
+
 echo "****************** php artisan key:generate ********************"
 php artisan key:generate
 
@@ -14,6 +17,8 @@ php artisan config:cache
 
 echo "****************** php artisan migrate ********************"
 php artisan migrate
+
+
 
 php-fpm
 
